@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/Xv6dydY6/image-downloader-1716188650624.jpg" type="image/png">
+    <title>Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+html{
+scroll-behavior:smooth;}
+    header {
+        height: 380px;
+        width: 100%;
+        background-image: url(https://i.postimg.cc/FRppyprC/image-downloader-1716188835466.jpg);
+    }
+    #logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    nav {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+
+
+    }
+
+    nav li,
+    a {
+
+        list-style: none;
+        text-decoration: none;
+        margin: 0px 0px 0px 20px;
+        color: white;
+    }
+
+    nav li :hover {
+        color: aqua;
+        background-color: -transipirent;
+        border: 3px solid aqua;
+    }
+
+    nav li a {
+        border: 3px solid white;
+        padding: 3px;
+        border-radius: 4px;
+    }
+
+    #htext {
+        color: white;
+        position: absolute;
+        top: 200px;
+        margin: 0px 0px 0px 15px;
+
+    }
+
+    #address {
+        position: relative;
+        top: 210px;
+    }
+
+    #address span {
+        color: white;
+
+    }
+
+    #address i {
+
+        border: 1px solid white;
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    #blackb {
+        position: relative;
+        top: 156px;
+        left: 10px;
+        background-color: #232323;
+        height: 25px;
+        width: 20px;
+    }
+
+    #icons span a i {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+
+    }
+
+    #icons {
+        position: relative;
+        top: 198px;
+        margin: 0px 0px 0px 17px;
+
+    }
+
+    #aboutbox {
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 25px;
+        text-align: left;
+        display: flex;
+        height: 310px;
+    }
+
+    #aboutbox span {
+        margin: 0px 15px 0px 0px;
+
+    }
+
+    #aboutbox span h4 {
+        padding: 0px;
+        margin: 20px 0px 0px 20px;
+        font-weight: 100;
+
+    }
+
+    #aboutbox span p {
+        margin: 10px 15px;
+        word-spacing: 5px;
+
+    }
+
+    #aboutbox span img {
+        filter: drop-shadow(3px 4px 10px black);
+    }
+
+    #Album {
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 10px;
+
+    }
+
+    #Album span img {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 4px;
+    }
+
+    #Album h5 {
+        font-size: 30px;
+        margin: 0px 0px 0px 30px;
+    }
+
+    #aboutservices {
+        margin: 5px;
+        border: 1px solid black;
+        background-color: black;
+        height: 380px;
+        border-radius: 3px;
+
+    }
+
+    #aboutservices h4 {
+        color: white;
+        margin: 35px 0px 0px 35px;
+    }
+
+    #aboutservices h2 {
+        color: white;
+        margin: 0px 0px 0px 45px;
+    }
+
+    #aboutservices hr {
+        width: 100px;
+        margin: 3px 0px 0px 45px;
+    }
+
+    #aboutservices div {
+        margin: 0px 120px;
+    }
+
+    #asbox {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #asbox div {
+        border: 1px;
+        color: white;
+        width: 200px;
+        margin: 5px;
+    }
+
+    #asbox div i {
+        font-size: 40px;
+        margin: 16px 0px 0px 0px;
+
+    }
+
+    #asbox div h6 {
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    #asbox div p {
+        font-size: 9px;
+        word-spacing: 2px;
+    }
+
+    #cd {
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 3px;
+
+    }
+
+    #cd i {
+        font-size: 40px;
+        margin: 0px 0px 0px 70px;
+
+    }
+
+    #cbox span {
+
+        margin: 40px;
+
+    }
+
+    #cbox {
+        display: flex;
+
+    }
+
+    #mcbox {
+        margin: 10px 250px;
+        border-radius: 3px;
+
+    }
+
+    #mcbox input {
+        border-radius: 3px;
+        background-color: darkgrey;
+
+    }
+
+    #mcbox center button {
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin: 10px;
+
+    }
+
+    #map center iframe {
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    #map {
+        position: absolute;
+        top: 2080px;
+        left: 572px;
+    }
+
+    #plan {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    @media only screen and (max-width:800px) {
+    body{width:100vw;
+    
+    }
+    #cbox hr{
+    margin:10px;
+    }
+    #cbox{
+    display:block;
+    
+    }
+    #cbox span, i,p{
+    margin:0px;
+    display: block;
+    text-align: center;
+    }
+    #cbox span i{
+    margin: 10px -20px;
+    }
+    #cboxig{
+    margin: 10px -30px;
+    
+    }
+    #cboxl{
+    position:relative;
+    left: -65px;
+    }
+    #cboxlp{
+    position:relative;
+    left: -22px;
+    }
+    #cboxigp{
+    position:relative;
+    left:-25px;
+    }
+    #mcbox{
+    position:contents;
+    margin:0px 20px ;
+    }
+    #map{
+    position:static;
+    left:10px;
+    }
+    #aboutbox{
+    text-align:left;
+    display:flex; 
+    height:501px;
+    }
+    #aboutbox span p{
+    word-spacing:3px;
+    
+    }
+    #aboutbox span img{
+    filter: drop-shadow( 3px 4px 10px black);
+    position:absolute;
+    width:150px;
+    right:14px;
+    margin:-15px 0px;
+    
+    
+    }
+    
+    #Album span img{
+    border:1px solid black;
+    border-radius:5px;
+    margin:4px;
+    }
+    nav li{
+    display:none;
+    }
+    #aboutservices {
+    height:1051px;
+    
+    }
+    }
+    
+
+.newpage{position:absolute;
+    top:10px;
+    right:10px;
+    background-color:white;
+    height:360px; 
+    width: 0px;
+    border:0px solid black;
+    border-radius:5px;
+    transition:1s width ease-in;
+
+}
+.sbt{
+    height:50px;
+    width:200px;
+    background-color:chartreuse;
+    color:black;
+    border:2px solid black;
+    border-radius:5px;
+    position:absolute;
+    top:4470px;
+    left:112px; 
+}
+    
+    
+    
+    
+    
+</style>
+
+<body>
+    <header>
+        <div><img id="logo" src="https://i.postimg.cc/NfdJ69rd/image-downloader-1716188552710.png" alt="error"></div>
+        <nav class="nav">
+            <li><a id="navH">Home</a></li>
+            <li><a id="navA">Album</a></li>
+            <li><a id="navS">Services</a></li>
+            <li><a id="navC">Conatct</a></li>
+        </nav>
+        <div id="htext">
+            <h1 text-color="white">I'M A</h1>
+            <h2 class="auto-type"></h2>
+        </div>
+        <div id="address">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+            <span>
+                <span margin="0px 6px">|</span>
+                <span style="font-weight:0;">Manjit,JagdishPura,Kaithal,Haryana</span>
+            </span>
+        </div>
+        <div id="blackb"></div>
+        <div id="icons">
+            <span id="fb">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f" style="color: #000000; padding:3px 7px;">
+                    </i </a>
+            </span>
+            <span ig="ig">
+                <a href="https://www.instagram.com/official_manjeet_hr08_?igsh=ZWh5NnEyd3FvYm44">
+                    <i class="fa-brands fa-square-instagram"
+                        style="color: #000000; padding: 3px 6px; background-color:white; margin:0px 0px 0px -10px;">
+                    </i>
+                </a>
+            </span>
+            <span id="yt">
+                <a href="#">
+                    <i class="fa-brands fa-youtube" style="color: #000000; padding: 3px 4px;">
+                    </i>
+                </a>
+            </span>
+        </div>
+    </header>
+    <main>
+        <div id="aboutbox">
+            <span style="width:500px;">
+                <div>
+                    <h4>ABOUT ME</h1>
+                </div>
+                <div>
+                    <hr width="100px" style="margin:5px 0px 0px 32px;">
+                </div>
+                <div>
+                    <h3 style="margin:0px 32px">READ MORE ABOUT ME</h3>
+                    <p>As a skilled photography and video editor, I bring visual stories to life with precision and
+                        creativity.</p>
+                    <p> I specialize in enhancing images and crafting compelling video narratives, ensuring each project
+                        meets the highest standards of quality and impact. My expertise includes color correction,
+                        seamless transitions, and advanced editing techniques to deliver visually stunning results.</p>
+                </div>
+
+            </span>
+            <span style=" width:10vh; margin:0px 40px;">
+                <img width="250px"
+                    src="https://i.postimg.cc/FszW4g6v/369459603-17980974254378427-9101807598427569263-n.jpg"
+                    alt="eror">
+            </span>
+        </div>
+        <div id="Album">
+            <h5>My Album></h5>
+            <span><img src="https://i.postimg.cc/tJHPxNzs/download.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/50zLyR8c/download-1.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/N0SRgc97/download-2.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/X7kK9mm4/download-3.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/L6pBY2yx/download-4.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/NGTkj5xy/download-5.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/3NgXScwj/images.jpg" alt=""></span>
+            <span><img src="https://i.postimg.cc/hGj0DsCg/images-1.jp" alt=""></span>
+            <span><img src="https://i.postimg.cc/Kz3rLzSH/images-2.jp" alt=""></span>
+            <span><img src="https://i.postimg.cc/L5dkVpm6/images-4.jp" alt=""></span>
+        </div>
+        <div id="aboutservices">
+            <h4>SERVICES</h4>
+            <hr>
+            <h2>WHAT I AM DOING?</h2>
+            <div id="asbox">
+                <div>
+                    <center><i class="fa-solid fa-scissors" style="color: #74C0FC;"></i>
+                        <h6>Editing & Remixing</h6>
+                        <p>Transform your captures into masterpieces with our expert editing and remixing services –
+                            elevate every shot to its fullest potential</p>
+                    </center>
+                </div>
+                <div>
+                    <center><i class="fa-solid fa-video" style="color: #74C0FC;"></i>
+                        <h6>Camera Proficiency</h6>
+                        <p>cameras (DSLRs, mirrorless, etc.), including shutter speed, aperture, ISO, white balance, and
+                            focusing techniques available . </p>
+                    </center>
+                </div>
+                <div>
+                    <center><i class="fa-solid fa-wand-magic-sparkles" style="color: #74C0FC;"></i>
+                        <h6>Special Effects</h6>
+                        <p>special effects, both practical (e.g., using smoke or lighting effects) and digital (e.g.,
+                            CGI, green screen work).</p>
+                    </center>
+                </div>
+                <div>
+                    <center><i class="fa-solid fa-signature" style="color: #74C0FC;"></i>
+                        <h6>Creative Vision</h6>
+                        <p>The ability to conceptualize and visualize the final output before shooting, and to tell a
+                            story through images or video.</p>
+                    </center>
+                </div>
+                <div>
+                    <center><i class="fa-solid fa-sheet-plastic" style="color: #74C0FC;"></i>
+                        <h6>Project Management</h6>
+                        <p>Planning shoots, organizing schedules, managing budgets, and coordinating with teams and
+                            clients</p>
+                    </center>
+                </div>
+                <div>
+                    <center><i class="fa-brands fa-stack-overflow" style="color: #74C0FC;"></i>
+                        <h6>Virtual Reality Video</h6>
+                        <p>Creating immersive content using VR and 360-degree video technologies, which require unique
+                            shooting and editing techniques.</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div id="cd">
+            <h4>Contact us</h4>
+            <hr width="100px">
+            <div id="cbox">
+                <span>
+                    <i id="cboxl" style="margin:0px 0px 0px 130px;" class="fa-solid fa-location-dot"
+                        style="color: #000000;"></i>
+                    <p id="cboxlp" style="margin:0px 0px 0px 40px;">manjit,Jagdishpura,Kaithal</p>
+                </span>
+                <span>
+                    <i id="cboxe" class="fa-solid fa-envelope" style="color: #000000;"></i>
+                    <p style="margin:0px 0px 0px 10px;">web9278@gmail.com</p>
+                </span>
+                <span>
+                    <i id="cboxig" class="fa-brands fa-square-instagram" style="color: #000000;"></i>
+                    <p id="cboxigp" style="margin:0px 0px 0px 50px;">manjit.zji</p>
+                </span>
+            </div>
+            
+           <center> <hr width="70%" style="margin:10px 0px;"></center>
+            <div id="mcbox">
+                <span>Name: </span>
+                <input id="name" type="text" style="margin:0px 38px;"><br><br>
+
+                <span>Email: </span>
+                <input id="emaill" type="email" style="margin:0px 38px;"><br><br>
+
+                <span>Mobile No.: </span>
+                <input id="numbers" type="number"><br><br>
+
+                <span>Adress : </span><br>
+                <input id="mcaddress" type="text" style="margin:0px 90px; height:50px;"><br>
+
+                <span>Other Message: </span><br>
+                <input id="message" type="text" style="margin:0px 90px; height:60px;"><br>
+
+                <center><button id="sbt">Submit</button></center>
+            </div>
+        </div>
+        <div id="map">
+            <center> <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d844.830397475266!2d76.43592972858892!3d29.83184748780081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3911dfe654138b37%3A0xa52c6e3554342f80!2sJagdish%20Pura%2C%20Haryana%20136027!5e0!3m2!1sen!2sin!4v1716793190910!5m2!1sen!2sin"
+                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        </div>
+        <div id="plan">
+            <center>
+                <h3 style="padding: 40px 0px;">@Copy Right Claim ,2024 All Right Reserved </h3>
+            </center>
+
+
+
+        </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Video Editer", "Photographer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+
+        })
+    </script>
+</body>
+<script>
+const body = document.body
+    var navH = document.getElementById('navH')
+    var navA = document.getElementById('navA')
+    var navS = document.getElementById('navS')
+    var navC = document.getElementById('navC')
+
+const d1 = document.createElement('div')
+const d2 = document.createElement('div')
+const d3 = document.createElement('div')
+const d4 = document.createElement('div')
+const mnavh = document.createElement('button')
+const mnava = document.createElement('button')
+const mnavs = document.createElement('button')
+const mnavc = document.createElement('button')
+    navC.addEventListener('click', function () {
+        window.scrollTo(1830, 1830)
+    })
+    navS.addEventListener('click', function () {
+        window.scrollTo(1450, 1450)
+    })
+    navA.addEventListener('click', function () {
+        window.scrollTo(750, 750)
+    })
+    var rni =document.createElement('i')
+      rni.classList.add('fa-solid','fa-bars','fa-2xl')
+      rni.id="rni"
+      rni.setAttribute('style','position:absolute; top:30px; font-size:50px; right:20px; color:white;')
+     body.appendChild(rni)
+     const newpage = document.createElement('div')
+     newpage.classList.add('newpage')
+rni.addEventListener('click',function(){
+newpage.setAttribute('style','position:absolute; top:10px; right:10px; background-color:white; height:360px; width:180px; border:1px solid black; border-radius:5px; ')
+const closebt = document.createElement('i')
+closebt.classList.add('fa-solid','fa-xmark')
+closebt.style.color="#000000"
+closebt.setAttribute('style','position:absolute; top:5px; right:5px; margin:0px; font-size:30px;')
+setTimeout( function(){
+newpage.appendChild(closebt)
+},1000);
+const mnav = document.createElement('div')
+setTimeout(function(){
+mnavh.setAttribute('style','margin:10px;font-size:20px; padding:5px; border:2px solid gold; color:black; border-radius:5px; ')
+mnava.setAttribute('style','margin:10px;font-size:20px; padding:5px; border:2px solid gold; color:black; border-radius:5px; ')
+mnavs.setAttribute('style','margin:10px;font-size:20px; padding:5px; border:2px solid gold; color:black; border-radius:5px; ')
+mnavc.setAttribute('style','margin:10px;font-size:20px; padding:5px; border:2px solid gold; color:black; border-radius:5px; ')
+mnavh.innerHTML="Home"
+mnava.innerHTML="Album"
+mnavs.innerHTML="Services"
+mnavc.innerHTML="Contact"
+d1.appendChild(mnavh)
+d2.appendChild(mnava)
+d3.appendChild(mnavs)
+d4.appendChild(mnavc)
+mnav.appendChild(d1)
+mnav.appendChild(d2)
+mnav.appendChild(d3)
+mnav.appendChild(d4)
+mnav.setAttribute('style','')
+newpage.appendChild(mnav)
+},500)
+mnavh.addEventListener('click',function(){
+})
+mnava.addEventListener('click',function(){
+    window.scrollTo(900,900)
+})
+mnavs.addEventListener('click',function(){
+    window.scrollTo(2900,2900)
+})
+mnavc.addEventListener('click',function(){
+    window.scrollTo(3870,3870)
+})
+closebt.addEventListener('click',function(){
+    newpage.setAttribute('style','width:0px;')
+    closebt.style.display="none"
+    setTimeout(function(){
+        mnav.style.display="none"
+    },500)
+})
+})
+body.appendChild(newpage)
+if (window.innerWidth < 800) {
+    rni.style.display=""
+}else{
+rni.style.display="none"
+}
+
+//
+const sbt = document.getElementById('sbt')
+const sbtm = document.createElement('div')
+const  mcbox = document.getElementById('mcbox')
+sbt.addEventListener('click',function(){
+
+    sbtm.classList.add('sbt')
+mcbox.appendChild(sbtm)
+sbtm.innerHTML="<center><div style='margin:3px 0px;'>Request Submitted</div><p style='font-size:10px;'>Team contacting in 24 hours</p></center>"
+setTimeout(function(){
+    sbtm.classList.remove('sbt')
+    sbtm.style.display="none"
+},3000 )
+})
+
+</script>
+
+</html>
